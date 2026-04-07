@@ -104,7 +104,7 @@ jobs:
           git commit -m "chore: update image tag to ${{ steps.version.outputs.tag }}"
           git push origin $BRANCH
           gh pr create \
-            --repo karthi-a04/kubernetes-demo \
+            --repo karthi-a04/kubernetes-demo2 \
             --base main \
             --head $BRANCH \
             --title "chore: update image tag to ${{ steps.version.outputs.tag }}" \
