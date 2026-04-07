@@ -90,8 +90,7 @@ jobs:
 
       - name: Update image tag in deployment.yaml
         run: |
-          sed -i "s|\(image: .*/kube-react-app:\).*|\1${{ steps.version.outputs.tag }}|" kubernetes-demo2/deployment.yaml
-
+          sed -i "s|\(image: .*/kube-react-app:\).*|\1${{ steps.version.outputs.tag }}|" deploy-repo/deployment.yaml
       - name: Raise PR to deploy repository
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
