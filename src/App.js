@@ -1,11 +1,7 @@
-import './App.css';
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      Hello world Kavin
-    </div>
-  );
+  return <div className="App">Hello world Karthi</div>;
 }
 
 export default App;
