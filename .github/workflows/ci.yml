@@ -84,7 +84,7 @@ jobs:
       - name: Checkout deploy repository
         uses: actions/checkout@v4
         with:
-          repository: karthi-a04/kubernetes-demo
+          repository: karthi-a04/kubernetes-demo2
           token: ${{ secrets.GH_PAT }}
           path: deploy-repo
 
