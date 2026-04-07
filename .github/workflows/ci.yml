@@ -90,7 +90,7 @@ jobs:
 
       - name: Update image tag in deployment.yaml
         run: |
-          sed -i "s|\(image: .*/kube-react-app:\).*|\1${{ steps.version.outputs.tag }}|" deploy-repo/deployment.yaml
+          sed -i "s|\(image: .*/kube-react-app:latest\).*|\1${{ steps.version.outputs.tag }}|" deploy-repo/deployment.yaml
 
       - name: Raise PR to deploy repository
         env:
